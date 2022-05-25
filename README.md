@@ -119,14 +119,6 @@ and, when compiling your code, add the required flags:
 -lft -L libft.a -I libft.h
 ```
 
-## 📋 Testing
-
-**1. Then run:**
-
-```shell
-gcc [your_main_here.c] + libft.a
-```
-
 ### Third-party testers
 
 * [jtoty/Libftest](https://github.com/jtoty/Libftest)
