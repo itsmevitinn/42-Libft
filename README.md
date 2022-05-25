@@ -43,7 +43,7 @@ For detailed information, refer to the [**subject of this project**](https://git
 
 ### Functions from `<strings.h>` library
 
-* [`ft_bzero`](libft/srcs/mem/ft_bzero.c)		- write zeroes to a byte string.
+* [`ft_bzero`](https://github.com/itsmevitinn/42cursus-libft/blob/main/ft_bzero.c)		- write zeroes to a byte string.
 * [`ft_memset`](libft/srcs/mem/ft_memset.c)		- write a byte to a byte string.
 * [`ft_memchr`](libft/srcs/mem/ft_memchr.c)		- locate byte in byte string.
 * [`ft_memcmp`](libft/srcs/mem/ft_memcmp.c)		- compare byte string.
