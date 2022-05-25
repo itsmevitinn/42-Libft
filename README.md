@@ -102,7 +102,7 @@ The library is written in C language and thus needs the **`gcc` compiler** and s
 To compile the library, run:
 
 ```shell
-$ cd /libft && make
+$ cd libft && make
 ```
 
 **2. Using it in your code**
