@@ -102,7 +102,7 @@ The library is written in C language and thus needs the **`gcc` compiler** and s
 To compile the library, run:
 
 ```shell
-$ cd path/to/libft && make
+$ cd /libft && make
 ```
 
 **2. Using it in your code**
@@ -116,7 +116,7 @@ To use the library functions in your code, simply include its header:
 and, when compiling your code, add the required flags:
 
 ```shell
--lft -L path/to/libft.a -I path/to/libft.h
+-lft -L libft.a -I libft.h
 ```
 
 ## 📋 Testing
@@ -124,7 +124,7 @@ and, when compiling your code, add the required flags:
 **1. Then run:**
 
 ```shell
-make libft.a
+gcc [your_main_here.c] + libft.a
 ```
 
 ### Third-party testers
