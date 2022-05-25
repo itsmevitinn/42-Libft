@@ -38,7 +38,7 @@ For detailed information, refer to the [**subject of this project**](https://git
 
 ### Functions from `<stdlib.h>` library
 
-* [`ft_atoi`](libft/ft_atoi.c)		- convert ASCII string to integer.
+* [`ft_atoi`](https://github.com/itsmevitinn/42cursus-libft/blob/main/ft_atoi.c)		- convert ASCII string to integer.
 * [`ft_calloc`](libft/srcs/mem/ft_calloc.c)	- memory allocation.
 
 ### Functions from `<strings.h>` library
