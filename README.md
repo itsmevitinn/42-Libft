@@ -55,7 +55,6 @@ For detailed information, refer to the [**subject of this project**](https://git
 * [`ft_strlen`](libft/srcs/str/ft_strlen.c)				- find length of string.
 * [`ft_strchr`](libft/srcs/str/ft_strchr.c)				- locate character in string (first occurrence).
 * [`ft_strrchr`](libft/srcs/str/ft_strrchr.c)			- locate character in string (last occurence).
-* [`ft_strstr`](libft/srcs/str/ft_strstr.c) *		- locate a substring in a string.
 * [`ft_strnstr`](libft/srcs/str/ft_strnstr.c)			- locate a substring in a string (size-bounded).
 * [`ft_strncmp`](libft/srcs/str/ft_strncmp.c) *			- compare strings (size-bounded).
 * [`ft_strdup`](libft/ft_strdup.c)				- save a copy of a string (with malloc).
