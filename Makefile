@@ -6,8 +6,6 @@ OBJS	= ${SRCS:.c=.o}
 
 OBJS_BONUS = ${SRCS_BONUS:.c=.o}
 
-HEADER	= libft.h
-
 NAME	= libft.a
 
 CC		= cc
