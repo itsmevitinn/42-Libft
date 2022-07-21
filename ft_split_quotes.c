@@ -6,22 +6,22 @@
 /*   By: vsergio <vsergio@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 11:35:39 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/19 23:25:32 by vsergio          ###   ########.fr       */
+/*   Updated: 2022/07/20 23:37:21 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int count_splits(char *s, char c);
-static int sub_len(char *s, char c);
-static void ft_free(char **final, int offset);
+static	int	count_splits(char *s, char c);
+static int	sub_len(char *s, char c);
+static void	ft_free(char **final, int offset);
 
-char **ft_split_quotes(char const *s, char c)
+char	**ft_split_quotes(char const *s, char c)
 {
-	char **final;
-	int splits;
-	int offset;
-	int substring;
+	char	**final;
+	int		splits;
+	int		offset;
+	int		substring;
 
 	offset = 0;
 	splits = count_splits((char *)s, c);
@@ -45,17 +45,17 @@ char **ft_split_quotes(char const *s, char c)
 	return (final);
 }
 
-static void ft_free(char **final, int offset)
+static void	ft_free(char **final, int offset)
 {
 	while (offset-- > 0)
 		free(final[offset]);
 	free(final);
 }
 
-static int count_splits(char *str, char c)
+static int	count_splits(char *str, char c)
 {
-	int sublen;
-	int splitnum;
+	int	sublen;
+	int	splitnum;
 
 	splitnum = 0;
 	while (*str != '\0')
@@ -69,36 +69,27 @@ static int count_splits(char *str, char c)
 	}
 	return (splitnum);
 }
-#include <stdio.h>
-static int sub_len(char *str, char c)
-{
-	int len;
 
-	len = 0;
-	while (*str != '\0' && *str != c)
+static int	sub_len(char *str, char c)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0' && str[i] != c)
 	{
-		if (*str == 39)
+		if (str[i] == 39)
 		{
-			str++;
-			len++;
-			while (*str != 39)
-			{
-				len++;
-				str++;
-			}
+			i++;
+			while (str[i] != 39)
+				i++;
 		}
-		if (*str == '"')
+		if (str[i] == '"')
 		{
-			str++;
-			len++;
-			while (*str != '"')
-			{
-				len++;
-				str++;
-			}
+			i++;
+			while (str[i] != '"')
+				i++;
 		}
-		str++;
-		len++;
+		i++;
 	}
-	return (len);
+	return (i);
 }
