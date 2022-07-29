@@ -116,9 +116,3 @@ and, when compiling your code, add the required flags:
 ```shell
 -lft -L libft.a -I libft.h
 ```
-
-### Third-party testers
-
-* [jtoty/Libftest](https://github.com/jtoty/Libftest)
-* [alelievr/libft-unit-test](https://github.com/alelievr/libft-unit-test)
-* [Tripouille/libftTester](https://github.com/Tripouille/libftTester)
