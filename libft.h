@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
+/*   By: vsergio <vsergio@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 21:26:12 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:48:26 by vsergio          ###   ########.fr       */
+/*   Updated: 2022/08/06 09:34:11 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,6 +32,13 @@ typedef struct s_list_gnl
 	char				*string;
 	struct s_list_gnl	*next;
 }						t_list_gnl;
+
+typedef struct s_doubly_list
+{
+	void					*string;
+	struct s_doubly_list	*next;
+	struct s_doubly_list	*previous;
+}							t_doubly_list;
 
 int			ft_isalpha(int c);
 int			ft_isdigit(int a);
