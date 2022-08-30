@@ -6,7 +6,7 @@
 /*   By: vsergio <vsergio@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 21:26:12 by vsergio           #+#    #+#             */
-/*   Updated: 2022/08/06 09:34:11 by vsergio          ###   ########.fr       */
+/*   Updated: 2022/08/30 12:05:01 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,11 +75,11 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char		**ft_split(char const *s, char c);
 void		ft_putnbr_fd(int n, int fd);
 t_list		*ft_lstnew(void *content);
-void		ft_lstadd_front(t_list **lst, t_list *new);
+void		ft_lstadd_front(t_list **lst, t_list *new_node);
 int			ft_lstsize(t_list *lst);
 t_list		*ft_lstlast(t_list *lst);
 t_list_gnl	*ft_lstlast_gnl(t_list_gnl *lst);
-void		ft_lstadd_back(t_list **lst, t_list *new);
+void		ft_lstadd_back(t_list **lst, t_list *new_node);
 void		ft_lstdelone(t_list *lst, void (*del)(void *));
 void		ft_lstclear(t_list **lst, void (*del)(void *));
 void		ft_lstiter(t_list *lst, void (*f)(void *));
