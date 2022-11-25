@@ -6,7 +6,7 @@
 /*   By: vsergio <vsergio@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/09 21:26:12 by vsergio           #+#    #+#             */
-/*   Updated: 2022/11/24 22:16:57 by Vitor            ###   ########.fr       */
+/*   Updated: 2022/11/25 18:54:32 by Vitor            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,4 +101,5 @@ int			ft_putstr_int(char *s);
 int			size_and_print_uint(va_list list_arg, char check);
 int			size_and_print_int(va_list list_arg);
 int			size_and_print_hex(va_list list_arg, char *basehex, char check);
+char		*ft_strtrim_edges(char const *s1, char const *set);
 #endif
