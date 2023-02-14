@@ -14,7 +14,7 @@
 
 void	free_strings(char *s1, char *s2, int frees);
 
-char	*ft_strjoin(char *s1, char *s2, int frees)
+char	*ft_strjoin_autofree(char *s1, char *s2, int frees)
 {
 	char	*full_string;
 	int		index_full;
