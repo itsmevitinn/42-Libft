@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_putstr_int.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/12/01 10:20:27 by vsergio           #+#    #+#             */
-/*   Updated: 2022/12/01 10:30:55 by vsergio          ###   ########.fr       */
+/*   Created: 2022/05/13 16:59:53 by vsergio           #+#    #+#             */
+/*   Updated: 2023/04/07 17:48:06 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-int	ft_isspace(char value)
+#include "printf.h"
+
+int	ft_putstr_int(char *s)
 {
-	if ((value >= 9 && value <= 13) || value == 32)
-		return (1);
-	return (0);
+	int	i;
+
+	i = 0;
+	if (!s)
+	{
+		write(1, "(null)", 6);
+		return (6);
+	}
+	while (s[i])
+	{
+		ft_putchar_int(s[i]);
+		i++;
+	}
+	return (i);
 }

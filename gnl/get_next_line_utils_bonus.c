@@ -6,11 +6,11 @@
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/05 13:02:32 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:32:52 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:50:11 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 int	found_newline(t_list_gnl	*stash)
 {

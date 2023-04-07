@@ -1,19 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front_bonus.c                            :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/18 16:59:50 by vsergio           #+#    #+#             */
-/*   Updated: 2023/04/07 17:53:55 by vsergio          ###   ########.fr       */
+/*   Created: 2022/12/01 10:20:27 by vsergio           #+#    #+#             */
+/*   Updated: 2023/04/07 17:52:02 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	ft_lstadd_front(t_list **lst, t_list *new_node)
+int	ft_isspace(char value)
 {
-	new_node->next = *lst;
-	*lst = new_node;
+	if ((value >= 9 && value <= 13) || value == 32)
+		return (1);
+	return (0);
 }

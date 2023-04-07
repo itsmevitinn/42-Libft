@@ -1,31 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_int.c                                    :+:      :+:    :+:   */
+/*   ft_strtrim_edges.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 16:59:53 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:54:22 by vsergio          ###   ########.fr       */
+/*   Created: 2022/05/13 09:20:23 by vsergio           #+#    #+#             */
+/*   Updated: 2023/04/07 17:52:31 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "extra.h"
 
-int	ft_putstr_int(char *s)
+char	*ft_strtrim_edges(char const *s1, char const *set)
 {
-	int	i;
+	char	*str1;
+	int		i_start;
+	int		i_end;
 
-	i = 0;
-	if (!s)
+	if (!s1)
+		return (NULL);
+	i_end = ft_strlen(s1) - 1;
+	i_start = 0;
+	if (s1[i_start] != '\0' && ft_strchr(set, s1[i_start]))
 	{
-		write(1, "(null)", 6);
-		return (6);
+		i_start++;
 	}
-	while (s[i])
+	if (s1[i_end] != '\0' && ft_strrchr(set, s1[i_end]))
 	{
-		ft_putchar_int(s[i]);
-		i++;
+		i_end--;
 	}
-	return (i);
+	str1 = ft_substr(s1, i_start, (i_end - i_start) + 1);
+	return (str1);
 }

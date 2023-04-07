@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split_quotes.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsergio <vsergio@student.42.fr>            +#+  +:+       +#+        */
+/*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/17 11:35:39 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/20 23:37:21 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:52:09 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "extra.h"
 
 static	int	count_splits(char *s, char c);
 static int	sub_len(char *s, char c);

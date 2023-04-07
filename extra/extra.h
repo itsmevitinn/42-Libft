@@ -1,19 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putchar_int.c                                   :+:      :+:    :+:   */
+/*   extra.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/05/13 16:20:49 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:54:10 by vsergio          ###   ########.fr       */
+/*   Created: 2023/04/07 17:51:28 by vsergio           #+#    #+#             */
+/*   Updated: 2023/04/07 17:51:42 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef EXTRA_H
+# define EXTRA_H
 
-int	ft_putchar_int(char c)
-{
-	write(1, &c, 1);
-	return (1);
-}
+# include "../libft.h"
+
+long int	ft_atol(const char *str);
+char		*ft_strjoin_autofree(char *s1, char *s2, int free);
+char		**ft_split_quotes(char const *s, char c);
+char		*ft_strtrim_edges(char const *s1, char const *set);
+int			ft_isspace(char value);
+
+#endif

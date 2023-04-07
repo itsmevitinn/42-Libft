@@ -6,10 +6,11 @@
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/10 16:16:07 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:54:01 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:45:34 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
+
+#include "printf.h"
 
 int	size_and_print_int(va_list list_arg)
 {

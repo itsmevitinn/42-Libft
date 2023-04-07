@@ -6,11 +6,11 @@
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/05 13:03:38 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:41:32 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:49:55 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "get_next_line.h"
 
 char	*get_next_line_bonus(int fd)
 {
@@ -103,7 +103,7 @@ void	extract_line(t_list_gnl *stash, char	**line)
 		while (stash->string[i])
 		{
 			if (stash->string[i] == '\n')
-			{	
+			{
 				(*line)[j++] = stash->string[i];
 				break ;
 			}

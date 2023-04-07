@@ -6,11 +6,11 @@
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/16 10:02:41 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:54:46 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:48:23 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
 static int	len(unsigned int nb)
 {

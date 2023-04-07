@@ -6,11 +6,11 @@
 /*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/06/08 10:49:08 by vsergio           #+#    #+#             */
-/*   Updated: 2022/07/28 22:53:49 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 17:41:56 by vsergio          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "printf.h"
 
 int	check_string(char char_tocheck, va_list list_arg)
 {

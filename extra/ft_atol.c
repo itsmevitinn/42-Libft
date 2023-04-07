@@ -1,40 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi_fractol.c                                  :+:      :+:    :+:   */
+/*   ft_atol.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vsergio <vsergio@student.42.rio>           +#+  +:+       +#+        */
+/*   By: gguedes <gguedes@student.42.rio>           +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/05/21 08:59:49 by vsergio           #+#    #+#             */
-/*   Updated: 2022/10/05 12:14:00 by vsergio          ###   ########.fr       */
+/*   Updated: 2023/04/07 10:10:22 by gguedes          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "libft.h"
 
-long int	ft_atoi_fractol(char *str)
+long int	ft_atol(const char *str)
 {
 	long int	res;
+	int			i;
 	int			sign;
 
+	i = 0;
 	res = 0;
 	sign = 1;
-	while (*str == ' ' || *str == '\t' || *str == '\n' || *str == '\r'
-		|| *str == '\v' || *str == '\f')
-			str++;
-	if (*str == '-' || *str == '+')
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\r'
+		|| str[i] == '\v' || str[i] == '\f')
+			i++;
+	if (str[i] == '-' || str[i] == '+')
 	{
-		if (*str == '-')
+		if (str[i] == '-')
 			sign *= -1;
-		str++;
+		i++;
 	}
-	if (!check_atoi_fractol(str))
-		suggest_exit();
-	while (*str >= '0' && *str <= '9')
+	while (str[i] >= '0' && str[i] <= '9')
 	{
-		res = res * 10 + *str - '0';
-		if (res > 2147483647 || res < -2147483648)
-			suggest_exit();
-		str++;
+		res = res * 10 + str[i] - '0';
+		i++;
 	}
 	return (sign * res);
 }
